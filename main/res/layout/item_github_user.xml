@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    style="@style/Margin8dp"
+    card_view:cardCornerRadius="4dp"
+    android:backgroundTint="@color/blue_grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/heightwrapwidthmatch"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/foto"/>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"
+            card_view:layout_constraintTop_toTopOf="@+id/img_item_photo"
+            tools:text="@string/namaUser" />
+
+        <TextView
+            android:id="@+id/tv_item_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_item_name"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+            tools:text="@string/username" />
+
+        <TextView
+            android:id="@+id/tv_item_jmlfollower"
+            style="@style/heightwrapwidthwrap"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_item_username"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            card_view:layout_constraintVertical_bias="0.28"
+            tools:text="@string/jmlFollower" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/heightwrapwidthwrap"
+            android:layout_marginStart="8dp"
+            android:text="@string/follower"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_item_jmlfollower"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_item_jmlfollower"
+            card_view:layout_constraintTop_toTopOf="@+id/tv_item_jmlfollower"
+            tools:text="@string/follower" />
+
+        <TextView
+            android:id="@+id/tv_item_jmlfollowing"
+            style="@style/heightwrapwidthwrap"
+            android:layout_marginEnd="8dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView2"
+            card_view:layout_constraintEnd_toStartOf="@+id/textView4"
+            card_view:layout_constraintTop_toTopOf="@+id/textView2"
+            card_view:layout_constraintVertical_bias="1.0"
+            tools:text="@string/jmlFollowing" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/heightwrapwidthwrap"
+            android:layout_marginEnd="16dp"
+            android:text="@string/following"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_item_jmlfollowing"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_item_username"
+            card_view:layout_constraintTop_toTopOf="@+id/tv_item_jmlfollowing"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:text="@string/following" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

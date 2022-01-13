@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="namaUser" />
+    <string name="username" />
+    <string name="jmlFollower">0</string>
+    <string name="follower">Follower</string>
+    <string name="jmlFollowing">0</string>
+    <string name="following">Following</string>
+    <string name="detailname" />
+    <string name="detailusername" />
+    <string name="detailcompany" />
+    <string name="detailAlamat" />
+    <string name="detailfollower">0</string>
+    <string name="textfollower">Follower</string>
+    <string name="detailfollowing">0</string>
+    <string name="textfollowing">Following</string>
+    <string name="detailrepository">0</string>
+    <string name="search">Search</string>
+    <string name="search_fragment" />
+    <string name="search_hint">Masukkan Username</string>
+    <string name="this_search">Ini Fragment Search</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_follower">content_follower</string>
+    <string name="content_following">content_following</string>
+    <string name="tab_text_1">Follower</string>
+    <string name="tab_text_2">Following</string>
+    <string name="home">Home</string>
+    <string name="foto" />
+    <string name="FollFoto" />
+    <string name="favorite">favorite</string>
+    <string name="detailphoto">detailPhoto</string>
+    <string name="float_btn">float_btn</string>
+    <string name="setting">Setting</string>
+
+    <string name="dark_mode">Dark Mode</string>
+</resources>
